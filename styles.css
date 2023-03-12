@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#nav-bar {
+    display: flex;
+    padding-top: 15px;
+    font-family: 'Inter', sans-serif;
+    /* flex-direction: row;
+    justify-content: space-around;
+    align-items: center; */
+}
+#logo {
+    width: 40%;
+    /* background-color: aqua; */
+    text-align: flex-start;
+    padding-left: 6%;
+    font-weight: 700;
+    font-size: 30px;
+    
+}
+#logo span{
+    color:#3733F0;
+}
+#logo a{
+    text-decoration: none;
+    color: black;
+}
+#nav-links{
+    width: 60%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /*background-color: blueviolet;*/
+    font-weight: 500;
+    font-size: 24px;
+}
+#nav-links a{
+    text-decoration: none;
+    color: rgb(129, 127, 127);
+}
+#nav-links a span{
+    color: black;
+}
+
+
+/* Home */
+#home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 35px;
+    flex-wrap: wrap-reverse;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-top: 25px;
+}
+#left-part{
+    font-family: 'Inter', sans-serif;
+}
+#left-part h2{
+    color: #7560fc;
+    font-weight: 800;
+    font-size: 40px;
+}
+#left-part p{
+    font-weight: 500;
+    font-size: 20px;
+    color:rgb(126, 126, 126)
+}
+#upload-box{
+    margin-top: 30px;
+    border-width: 3px;
+    border-style: dashed;
+    border-radius: 30px;
+    border-color: rgb(227, 229, 229);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#upload-box img{
+    border-radius: 50%;
+    /* border:3px dotted #a6bff1; */
+    padding:15px;
+    background-color: #e2f5fe;
+}
+
+#upload-box input::file-selector-button {
+    background-color: #6094fc;
+    color: white;
+    margin:20px;
+    padding: 15px;
+    border: thin solid;
+    border-radius: 7px;
+    background-image: url(images/upload-button.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 20px;
+    padding-left: 25px;
+    padding-right: 30px;
+}
+#upload-box p{
+    font-size: 13px;
+}
+
+#about {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(90deg, #0500FF 0%, #A717FF 100%);
+    opacity: 0.7;
+    text-align: center;
+    height: 25px;
+}
+#about p{
+    color: white;
+}
+
+
+
