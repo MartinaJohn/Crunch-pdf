@@ -1,2 +1,5 @@
 test.py
 input.pdf
+/node_modules
+.env
+package-lock.json

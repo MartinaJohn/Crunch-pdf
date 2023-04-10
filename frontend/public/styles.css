@@ -83,7 +83,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
+
 #upload-box img{
     border-radius: 50%;
     /* border:3px dotted #a6bff1; */
@@ -104,6 +106,7 @@
     background-size: 20px;
     padding-left: 25px;
     padding-right: 30px;
+    
 }
 #upload-box p{
     font-size: 13px;
