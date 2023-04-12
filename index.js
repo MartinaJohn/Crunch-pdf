@@ -3,12 +3,15 @@ const express=require('express')
 const dotenv=require('dotenv').config()
 const port=process.env.PORT||5000
 const app=express()
-import enccomp from './routes/enccomp'
+
 // Enable body parser
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Set static folder
+app.get('/api/enccomp',(req,res)=>{
+   
+})
 app.use("/api/home",express.static(path.join(__dirname, 'frontend/public')));
 
 
@@ -31,8 +34,6 @@ app.use("/api/home",express.static(path.join(__dirname, 'frontend/public')));
 //   fileContents.pipe(gzip).pipe(cipher).pipe(res);
 // });
 
-app.get('/api/enccomp',(req,res)=>{
-    res.send('Hello')
-})
-app.use()
+
+
 app.listen(port, () => console.log(`Server started on port ${port}`));
