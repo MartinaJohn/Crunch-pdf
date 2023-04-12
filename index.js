@@ -155,7 +155,8 @@ app.post('/upload', upload.single('file'), (req, res, next) => {
   // const key = crypto.randomBytes(32);
   const iv = crypto.randomBytes(16);
 
-  const cipher = crypto.createCipheriv(algorithm, Buffer.from(key), iv);
+  //buffer.from(key)
+  const cipher = crypto.createCipheriv(algorithm, password, iv);
   let encrypted = cipher.update(req.file.buffer);
   encrypted = Buffer.concat([encrypted, cipher.final()]);
 
